@@ -12,8 +12,8 @@ var handlebars = require('express-handlebars');
 
 keystone.init({
 	'name': 'pasalspacewebsite',
-	'brand': 'pasalspacewebsite',
-
+	'brand': 'pasalspacewebsite',	
+	'port': 3020,
 	'sass': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
