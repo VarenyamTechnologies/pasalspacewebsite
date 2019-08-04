@@ -1,0 +1,307 @@
+ <section class="blog_breadcrumb_area" style="background: url(./img/new/blog/blog_single_bg.jpg) no-repeat scroll center 0 / cover">
+            <div class="background_overlay"></div>
+            <div class="container">
+                <div class="breadcrumb_content_two text-center">
+                    <h5>Creative Theme, SaasLand</h5>
+                    <h1>{{data.post.title}}</h1>
+                    <ol class="list-unstyled">
+                        <li> {{#if author.name.first}}by {{author.name.first}}{{/if}}</li>
+                        <li> 04 Comment (s)</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog_area_two sec_pad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 blog_single_info">
+                        <div class="blog_list_item blog_list_item_two">
+                            <a href="#" class="post_date">
+                                <h2>14 <span>Jan</span></h2>
+                            </a>
+
+                            {{#if data.post.image}}
+                            <img class="img-fluid" src="{{{cloudinaryUrl data.post.image width=750 height=450 crop='fit' }}}" alt="" data-pagespeed-url-hash="2352353175" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            {{/if}}
+                            <div class="blog_content">
+
+                                {{{data.post.content.extended}}}
+
+                                <div class="post-info-bottom">
+                                    <div class="social_icon">
+                                        share:
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"><i class="social_facebook"></i></a></li>
+                                            <li><a href="#"><i class="social_twitter"></i></a></li>
+                                            <li><a href="#"><i class="social_vimeo"></i></a></li>
+                                            <li><a href="#"><i class="social_linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    {{!-- <a class="post-info-comments" href="#">
+                                        <i class="icon_comment_alt" aria-hidden="true"></i>
+                                        <span>3 Comments</span>
+                                    </a> --}}
+                                </div>
+                            </div>
+                        </div>
+                        {{!-- <div class="media post_author_two">
+                            <img class="img_rounded" src="img/new/blog/author.jpg" alt="" data-pagespeed-url-hash="3358885499" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            <div class="media-body">
+                                <div class="comment_info">
+                                    <h3>Fletch Skinner</h3>
+                                </div>
+                                <p>Tinkety tonk old fruit Harry gormless morish Jeffrey what a load of rubbish burke what a plonker hunky.!</p>
+                            </div>
+                        </div> --}}
+                        {{!-- <div class="blog_related_post blog_grid_info">
+                            <h2 class="blog_titles">Related Post</h2>
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="blog_list_item blog_list_item_two">
+                                        <a href="#" class="post_date">
+                                            <h2>12 <span>Dec</span></h2>
+                                        </a>
+                                        <a href="blog-single.html"><img class="img-fluid" src="img/new/blog/related_p_1.jpg" alt="" data-pagespeed-url-hash="292778028" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                                        <div class="blog_content">
+                                            <a href="#">
+                                                <h5 class="blog_title">Why I say old chap that.</h5>
+                                            </a>
+                                            <p>Harry bits and bleeding crikey argy-bargy...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="blog_list_item blog_list_item_two">
+                                        <a href="#" class="post_date">
+                                            <h2>12 <span>Dec</span></h2>
+                                        </a>
+                                        <a href="blog-single.html"><img class="img-fluid" src="img/new/blog/related_p_2.jpg" alt="" data-pagespeed-url-hash="587277949" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                                        <div class="blog_content">
+                                            <a href="#">
+                                                <h5 class="blog_title">Why I say old chap that.</h5>
+                                            </a>
+                                            <p>Harry bits and bleeding crikey argy-bargy... </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-6">
+                                    <div class="blog_list_item blog_list_item_two">
+                                        <a href="#" class="post_date">
+                                            <h2>12 <span>Dec</span></h2>
+                                        </a>
+                                        <a href="blog-single.html"><img class="img-fluid" src="img/new/blog/related_p_3.jpg" alt="" data-pagespeed-url-hash="881777870" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                                        <div class="blog_content">
+                                            <a href="#">
+                                                <h5 class="blog_title">Why I say old chap that.</h5>
+                                            </a>
+                                            <p>Harry bits and bleeding crikey argy-bargy...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> --}}
+                        {{!-- <div class="comment_inner">
+                            <h2 class="blog_titles">2 Comment</h2>
+                            <ul class="comment_box list-unstyled">
+                                <li class="post_comment">
+                                    <div class="media post_author_two">
+                                        <img class="img_rounded" src="img/new/blog/comment_01.jpg" alt="" data-pagespeed-url-hash="3840855453" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                        <div class="media-body">
+                                            <div class="comment_info">
+                                                <h3>Fletch Skinner</h3>
+                                                <div class="comment-date">Just Now</div>
+                                            </div>
+                                            <a href="#" class="comment_reply">Reply<i class="arrow_right"></i></a>
+                                            <p>Cuppa the bee's knees the full monty bloke cockup pear shaped bubble and squeak lavatory naff, chip shop bodge burke do one have.!</p>
+                                        </div>
+                                    </div>
+                                    <ul class="list-unstyled reply_comment">
+                                        <li>
+                                            <div class="media post_author_two">
+                                                <img class="img_rounded" src="img/new/blog/comment_02.jpg" alt="" data-pagespeed-url-hash="4135355374" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                                <div class="media-body">
+                                                    <div class="comment_info">
+                                                        <h3>Hans Down</h3>
+                                                        <div class="comment-date">44 mins ago</div>
+                                                    </div>
+                                                    <a href="#" class="comment_reply">Reply<i class="arrow_right"></i></a>
+                                                    <p>Dropped a clanger up the kyver easy peasy vagabond victoria sponge Charles tinkety tonk old fruit argy.!</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="post_comment">
+                                    <div class="media post_author_two">
+                                        <img class="img_rounded" src="img/new/blog/comment_01.jpg" alt="" data-pagespeed-url-hash="3840855453" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                        <div class="media-body">
+                                            <div class="comment_info">
+                                                <h3>Chauffina Carr</h3>
+                                                <div class="comment-date">04 mins ago</div>
+                                            </div>
+                                            <a href="#" class="comment_reply">Reply<i class="arrow_right"></i></a>
+                                            <p>Cuppa the bee's knees the full monty bloke cockup pear shaped bubble and squeak lavatory naff, chip shop bodge burke do one have.!</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> --}}
+                        <div class="blog_comment_box">
+                            <h2 class="blog_titles">Leave a Comment</h2>
+                            <form class="get_quote_form row" action="#" method="post">
+                                <div class="col-md-6 form-group">
+                                    <input type="text" class="form-control" id="name" placeholder="Name">
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <textarea class="form-control message" placeholder="Comment"></textarea>
+                                </div>
+                                <div class="col-md-12"><button class="btn btn_three btn_hover f_size_15 f_500" type="submit">Post Comment</button></div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        {{!-- <div class="blog-sidebar">
+                            <div class="widget sidebar_widget search_widget_two">
+                                <form action="#" class="search-form input-group">
+                                    <input type="search" class="form-control widget_input" placeholder="Search">
+                                    <button type="submit"><i class="ti-search"></i></button>
+                                </form>
+                            </div>
+                            <div class="widget sidebar_widget recent_post_widget_two mt_60">
+                                <h3 class="widget_title_two">Recent posts</h3>
+                                <div class="media post_item">
+                                    <img src="img/new/blog/post1.jpg" alt="" data-pagespeed-url-hash="2198803311" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                    <div class="media-body">
+                                        <a href="#">
+                                            <h3>Fast App development</h3>
+                                        </a>
+                                        <a href="#" class="entry_post_info">March 14, 2019</a>
+                                    </div>
+                                </div>
+                                <div class="media post_item">
+                                    <img src="img/new/blog/post2.jpg" alt="" data-pagespeed-url-hash="2493303232" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                    <div class="media-body">
+                                        <a href="#">
+                                            <h3>Proin gravi nibh velit</h3>
+                                        </a>
+                                        <a href="#" class="entry_post_info">March 14, 2019</a>
+                                    </div>
+                                </div>
+                                <div class="media post_item">
+                                    <img src="img/new/blog/post3.jpg" alt="" data-pagespeed-url-hash="2787803153" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                    <div class="media-body">
+                                        <a href="#">
+                                            <h3>Massive Integrations</h3>
+                                        </a>
+                                        <a href="#" class="entry_post_info">March 14, 2019</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget sidebar_widget categorie_widget_two mt_60">
+                                <h3 class="widget_title_two">Categories</h3>
+                                <ul class="list-unstyled">
+                                    <li> <a href="#"><span>Fashion</span><em>(54)</em></a> </li>
+                                    <li> <a href="#"><span>Food for thought</span><em>(83)</em></a> </li>
+                                    <li> <a href="#"><span>Gaming</span><em>(96)</em></a> </li>
+                                    <li> <a href="#"><span>Music</span><em>(38)</em></a> </li>
+                                    <li> <a href="#"><span>Uncategorized</span><em>(44)</em></a> </li>
+                                    <li> <a href="#"><span>SaasLand</span><em>(44)</em></a> </li>
+                                    <li> <a href="#"><span>Project Management</span><em>(44)</em></a> </li>
+                                    <li> <a href="#"><span>Wireframing</span><em>(44)</em></a> </li>
+                                </ul>
+                            </div>
+                            <div class="widget sidebar_widget tag_widget_two mt_60">
+                                <h3 class="widget_title_two">Tags</h3>
+                                <div class="post-tags">
+                                    <a href="#">SaasLand</a>
+                                    <a href="#">Web Design</a>
+                                    <a href="#">Saas</a>
+                                    <a href="#">Cooling System</a>
+                                    <a href="#">Corporate</a>
+                                    <a href="#">Software</a>
+                                    <a href="#">Landing</a>
+                                    <a href="#">Wheels</a>
+                                </div>
+                            </div>
+                            <div class="widget sidebar_widget instagram_widget mt_60">
+                                <h3 class="widget_title_two">Instagram</h3>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"><img src="img/new/blog/image_01.jpg" alt="" data-pagespeed-url-hash="2836699161" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/new/blog/image_02.jpg" alt="" data-pagespeed-url-hash="3131199082" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/new/blog/image_03.jpg" alt="" data-pagespeed-url-hash="3425699003" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/new/blog/image_04.jpg" alt="" data-pagespeed-url-hash="3720198924" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/new/blog/image_05.jpg" alt="" data-pagespeed-url-hash="4014698845" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/new/blog/image_06.jpg" alt="" data-pagespeed-url-hash="14231470" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="widget sidebar_widget comments_widget mt_60">
+                                <h3 class="widget_title_two">Recent Comments</h3>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <div class="media comments_items">
+                                            <div class="round_img">
+                                                <img src="img/new/blog/comments_01.png" alt="" data-pagespeed-url-hash="3624632370" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                            </div>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p>Only a quid bobby brilliant bugger Jeffrey owt to do with me lurgy blimey.! <span>Norman Gordon</span></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="media comments_items">
+                                            <div class="round_img">
+                                                <img src="img/new/blog/comments_02.png" alt="" data-pagespeed-url-hash="3919132291" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                            </div>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p>Only a quid bobby brilliant bugger Jeffrey owt to do with me lurgy blimey.! <span>Norman Gordon</span></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="media comments_items">
+                                            <div class="round_img">
+                                                <img src="img/new/blog/comments_03.png" alt="" data-pagespeed-url-hash="4213632212" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                            </div>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p>Only a quid bobby brilliant bugger Jeffrey owt to do with me lurgy blimey.! <span>Norman Gordon</span></p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="widget sidebar_widget widget_recent_comments mt_60">
+                                <h3 class="widget_title_two">Recent Comments</h3>
+                                <ul id="recentcomments">
+                                    <li class="recentcomments"><span class="comment-author-link">jewel</span> on <a href="http://localhost/saasland/product/album/#comment-5">Only a quid bobby brilliant bugger Jeffrey owt to do with me lurgy blimey.!</a></li>
+                                    <li class="recentcomments"><span class="comment-author-link">jewel</span> on <a href="http://localhost/saasland/product/album/#comment-4">Only a quid bobby brilliant bugger Jeffrey owt to do with me lurgy blimey.!</a></li>
+                                    <li class="recentcomments"><span class="comment-author-link">jewel</span> on <a href="http://localhost/saasland/2018/11/14/why-i-say-old-chap-that-is-spiffing-bodge-blag-pardon/#comment-3">Why I say old chap that is spiffing bodge, blag pardon.</a></li>
+                                    <li class="recentcomments"><span class="comment-author-link">jewel</span> on <a href="http://localhost/saasland/2018/11/14/why-i-say-old-chap-that-is-spiffing-bodge-blag-pardon/#comment-2">Only a quid bobby brilliant bugger Jeffrey owt to do with me lurgy blimey.!</a></li>
+                                </ul>
+                            </div>
+                        </div> --}}
+                    </div>
+                </div>
+            </div>
+        </section>
